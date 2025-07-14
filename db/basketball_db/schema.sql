@@ -53,3 +53,21 @@ ALTER TABLE divison
     ADD last_update TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
 
 
+CREATE TABLE championship(
+    championship_id SMALLINT UNSIGNED AUTO_INCREMENT NOT NULL,
+    championship SMALLINT(30),
+    CONSTRAINT pk_championship PRIMARY KEY (championship_id),
+    yr_won YEAR
+);
+
+
+/** CREATE TABLE team_to_championship (
+    team _id SMALLINT UNSIGNED NOT NULL,
+    championship_id SMALLINT UNSIGNED NOT NULL,
+    date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    last_update TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    CONSTRAINT fk_team_tc FOREIGN KEY (team_id) REFERENCES team (team_id),
+    CONSTRAINT fk_chapionship_tc FOREIGN KEY (championship_id) REFERENCES championship (championship_id) 
+); */
+
+

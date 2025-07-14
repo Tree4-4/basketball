@@ -97,3 +97,78 @@ VALUES
         ('CHEF CURRY', 10, 20, 5, 1946),
         ('GERMAN JESUS', 11, 24, 5, 1980),
         ('D-BOOK', 12, 23, 5, 1968);
+
+
+INSERT INTO  player(fName, lName)
+VALUES
+    ('STEVEN', 'ADAMS'), /** 13 */
+    ('JAYSON', 'TATUM'),
+    ('ANTHONY', 'EDWARDS'),
+    ('JA', 'MORANT'),
+    ('JAMES', 'HARDEN'),
+    ('BRADLEY', 'BEAL'),
+    ('MYLES', 'TURNER'),
+    ('KYLE', 'KUZMA'),
+    ('JRUE', 'HOLIDAY'),
+    ('PASCAL', 'SIAKAM'),
+    ('BRONNY', 'JAMES'),
+    ('AUSTIN', 'REAVES'),
+    ('JORDAN', 'POOLE'),
+    ('LUKE', 'KORNET'),
+    ('MARCUS', 'SMART'),
+    ('CAM', 'THOMAS'),
+    ('SCOTTIE', 'BARNES'),
+    ('JALEN', 'GREEN'),
+    ('VICTOR', 'WEMBANYAMA'),
+    ('NICOLAS', 'BATUM'),
+    ('ALEX', 'SARR'),
+    ('OBI', 'TOPPIN')
+    ;
+
+INSERT INTO franchise(title, player_id, team_id, divison_id, yr_founded)
+VALUES
+    ('BIG KIWI', 13, 26, 6, 1967),
+    ('THE ANOMALY', 14, 1, 1, 1947),
+    ('ANT-MAN', 15, 16, 4, 1989),
+    ('POINT GOD', 16, 27, 6, 1995),
+    ('THE BEARD', 17, 21, 5, 1970),
+    ('REAL DEAL', 18, 23, 5, 1968),
+    ('SAMURAI MYLES', 19, 9, 2, 1967),
+    ('KUZ', 20, 9, 2, 1968),
+    ('JHOLLA', 21, 18, 4, 1970),
+    ('SPICY P', 22, 8, 2, 1967),
+    ('NULL', 23, 22, 5, 1947),
+    ('HILLBILLY KOBE', 24, 22, 5, 1947),
+    ('THE MICROWAVE', 25, 28, 6, 2002),
+    ('NULL', 28, 29, 6, 1967),
+    ('THE COBRA', 29, 27, 6, 1995),
+    ('NULL', 30, 2, 1, 1967),
+    ('NULL', 31, 5, 1, 1995),
+    ('THE UNICORN', 32, 26, 6, 1967),
+    ('THE ALIEN', 33, 29, 6, 1967),
+    ('BAT-MAN', 34, 21, 5, 1947),
+    ('THE BIG EIFFEL', 35, 13, 3, 1961),
+    ('OBI', 36, 8, 2, 1967)
+    ;
+
+
+    SET FOREIGN_KEY_CHECKS = 0;
+
+
+INSERT INTO player(fName, lName)
+VALUES
+    ('P.J', 'TUCKER'),
+    ('LAMELLO', 'BALL'),
+    ('DONOVAN', 'MITCHELL'),
+    ('JAYLEN', 'BROWN'),
+    ('LUKA', 'DONCIC'),
+    ('CHRIS', 'PAUL'),
+    ('DRAMOND', 'GREEN'),
+    ('JAMAL', 'MURRAY'),
+    ('DERRICK', 'WHITE'),
+    ('ANTHONY', 'BLACK'),
+    ('JOEL', 'EMBIID'),
+    ('JAYLEN', 'WILLAIMS'),
+    ('')
+
+
