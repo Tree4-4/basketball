@@ -1,4 +1,4 @@
-INSERT INTO player(fName, lName) Values('MICHAEL','JORDAN');
+/** INSERT INTO player(fName, lName) Values('MICHAEL','JORDAN');
 
 
 
@@ -169,6 +169,89 @@ VALUES
     ('ANTHONY', 'BLACK'),
     ('JOEL', 'EMBIID'),
     ('JAYLEN', 'WILLAIMS'),
-    ('')
+    ('NAZ', 'REID'),
+*/ 
+
+INSERT INTO player(
+    fName,
+    lName,
+    weight_sc,
+    height_cm,
+    position,
+    dt_birth,
+    experience
+)
+VALUES (
+    'LEBRON',
+    'JAMES',
+    250,
+    '6.9',
+    'POWER FORWARD',
+    '1984-12-30',
+    20
+);
+
+INSERT INTO player(
+    fName,
+    lName,
+    weight_sc,
+    height_cm,
+    position,
+    dt_birth,
+    experience
+)
+VALUES (
+    'STEPH',
+    'CURRY',
+    185,
+    '6.2',
+    'POINT GUARD',
+    '1988-03-14',
+    16
+),
+(
+    'JAYSON',
+    'TATUM',
+    203,
+    '6.8',
+    'POWER FORWARD',
+    '1998-03-03',
+    8
+),
+(
+    'KEVIN',
+    'DURANT',
+    240,
+    '6.11',
+    'POWER FORWARD',
+    '1988-09-29',
+    17
+),
+(
+    'KAWHI',
+    'LEONARD',
+    225,
+    '6.7',
+    'SMALL FORWARD',
+    '1991-06-29',
+    13
+),
+(
+    'DEVIN',
+    'BOOKER',
+    206,
+    '6.6',
+    'SHOOTING GUARD',
+    '1996-10-30',
+    10
+),
+(
+    'CHRIS',
+    'PAUL',
+    175,
+    '6.0',
+    'POINT GUARD',
+    ''
+)
 
 
