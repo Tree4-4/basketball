@@ -1,22 +1,4 @@
-/** INSERT INTO player(fName, lName) Values('MICHAEL','JORDAN');
-
-
-
-
-INSERT INTO player(fName, lName)
-VALUES
-    ('LARRY', 'BIRD'),
-    ('EARVIN', 'JOHNSON'),
-    ('ALLEN', 'IVERSON'),
-    ('TIM', 'DUNCAN'),
-    ('KOBE', 'BRYANT'),
-    ('KAWHI', 'LEONARD'),
-    ('LEBRON', 'JAMES'),
-    ('KEVIN', 'DURANT'),
-    ('STEPH', 'CURRY'),
-    ('DIRK', 'NOWITZKI'),
-    ('DEVIN', 'BOOKER')
-;
+/**
 
 INSERT INTO team(team)
 VALUES
@@ -50,53 +32,6 @@ VALUES
     ('NEW ORLEANS PELICANS'),
     ('SAN ANTONIO SPURS'),
     ;
-
-
-
-INSERT INTO divison(divison)
-VALUES
-    ('ATLANTIC DIVISON'),
-    ('CENTRAL DIVISON'),
-    ('SOUTHEAST DIVISON'),
-    ('NORTHWEST DIVISON'),
-    ('PACIFIC DIVISON'),
-    ('SOUTHEAST DIVISON')
-    ;
-
-
-
-INSERT INTO franchise(
-    title,
-    player_id,
-    team_id,
-    divison_id,
-    yr_founded
-)
-VALUES(
-    'THREE-PEATS',
-    1,
-    30,
-    2,
-    1966
-);
-
-INSERT INTO team(team)
-VALUES 
-    ('CHICAGO BULLS');
-
-    INSERT INTO franchise(title, player_id, team_id, divison_id, yr_founded)
-    VALUES
-        ('LARRY LEGEND', 2, 1, 1, 1946),
-        ('MAGIC JOHNSON', 3, 22, 5, 1947),
-        ('AI', 4, 4, 1, 1946),
-        ('THE BIG FUNDAMENTAL', 5, 29, 6, 1967),
-        ('THE BLACK MAMBA', 6, 22, 5, 1947),
-        ('THE KLAW', 7, 21, 6, 1970),
-        ('KING JAMES', 8, 22, 5, 1947),
-        ('DURANTUALA', 9, 25, 6, 1967),
-        ('CHEF CURRY', 10, 20, 5, 1946),
-        ('GERMAN JESUS', 11, 24, 5, 1980),
-        ('D-BOOK', 12, 23, 5, 1968);
 
 
 INSERT INTO  player(fName, lName)
@@ -155,21 +90,6 @@ VALUES
     SET FOREIGN_KEY_CHECKS = 0;
 
 
-INSERT INTO player(fName, lName)
-VALUES
-    ('P.J', 'TUCKER'),
-    ('LAMELLO', 'BALL'),
-    ('DONOVAN', 'MITCHELL'),
-    ('JAYLEN', 'BROWN'),
-    ('LUKA', 'DONCIC'),
-    ('CHRIS', 'PAUL'),
-    ('DRAMOND', 'GREEN'),
-    ('JAMAL', 'MURRAY'),
-    ('DERRICK', 'WHITE'),
-    ('ANTHONY', 'BLACK'),
-    ('JOEL', 'EMBIID'),
-    ('JAYLEN', 'WILLAIMS'),
-    ('NAZ', 'REID'),
 */ 
 
 INSERT INTO player(
@@ -251,7 +171,89 @@ VALUES (
     175,
     '6.0',
     'POINT GUARD',
-    ''
+    '1985-06-06',
+    20
+),
+(
+    'JRUE',
+    'HOLIDAY',
+    205,
+    '6.4',
+    'SHOOTING GUARD',
+    '1990-06-12',
+    16
+),
+(
+    'ANTHONY',
+    'EDWARDS',
+    225,
+    '6.4',
+    'SHOOTING GUARD',
+    '2001-07-05',
+    5
+),
+(
+    'JAYLEN',
+    'BROWN',
+    223,
+    '6.6',
+    'SMALL FORWARD',
+    '1996-10-24',
+    9
+),
+(
+    'DRAYMOND',
+    'GREEN',
+    230,
+    '6.6',
+    'POWER FORWARD',
+    '1990-03-04',
+    13
 )
+;
+
+
+INSERT INTO divison(divison)
+VALUES
+    ('ATLANTIC DIVISON'),
+    ('CENTRAL DIVISON'),
+    ('SOUTHEAST DIVISON'),
+    ('NORTHWEST DIVISON'),
+    ('PACIFIC DIVISON'),
+    ('SOUTHEAST DIVISON')
+    ;
+
+INSERT INTO franchise(team, player_id, divison_id, yr_founded)
+VALUES
+    ('BOSTON CELTICS', 3, 1, 1947);
+
+
+INSERT INTO player( fName, lName, weight_sc, height_cm, position, dt_birth, experience)
+VALUES 
+('CAM', 'THOMAS', 210, '6.4', 'SHOOTING GUARD', '2001-10-13', 4),
+('JALEN', 'BRUNSON', 190, '6.2', 'POINT GUARD', '1996-07-31',
+7),
+('JOEL', 'EMBIID', 280, '7.0', 'CENTER', '1994-03-16',
+9),
+('SCOTTIE', 'BARNES', 227, '6.7', 'SMALL FORWARD', '2001-07-01',
+4),
+('COBY', 'WHITE', 195, '6.5', 'POINT GUARD', '2000-02-16',
+6),
+('DONOVAN', 'MITCHELL JR', 215, '6.3', 'SHOOTING GUARD', '1996-09-07', 8),
+('AUSAR', 'THOMPSON', 215, '6.7', 'SMALL FORWARD', '2003-01-30',
+2),
+('TYRESE', 'HALIBURTON', 185, '6.5', 'POINT GUARD', '2000-02-29',
+5),
+('GIANNIS', 'ANTETOKOUNMPO', 242, '6.11', 'POWER FORWARD', '1994-12-06', 12),
+()
+
+
+INSERT INTO franchise(team, player_id, divison_id, yr_founded)
+VALUES
+    ('BROOKYLN NETS', NULL, 1, 1967),
+    ()
+
+
+
 
 
