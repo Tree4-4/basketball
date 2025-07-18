@@ -1,92 +1,5 @@
 /**
 
-INSERT INTO team(team)
-VALUES
-    ('BOSTON CELTICS'),
-    ('BROOKLYN NETS'),
-    ('NEW YORK KNICKS'),
-    ('PHILADELPHIA 76ERS'),
-    ('TORONTO RAPTORS'),
-    ('CLEVELAND CAVALIERS'),
-    ('DETROIT PISTONS'),
-    ('INDIANA PACERS'),
-    ('MILWAUKEE BUCKS'),
-    ('ATLANA HAWKS'),
-    ('CHARLOTTE HORNETS'),
-    ('ORLANDO MAGIC'),
-    ('WASHINGTON WIZARDS'),
-    ('MIAMI HEAT'),
-    ('DENVER NUGGETS'),
-    ('MINNESOTA TIMBERWOLVES'),
-    ('OKLAHOMA CITY THUNDER'),
-    ('PORTLAND TRAILBLAZERS'),
-    ('UTAH JAZZ'),
-    ('GOLDEN STATE WARRIORS'),
-    ('LOS ANGELES CLIPPERS'),
-    ('LOS ANGELES LAKERS'),
-    ('PHOENIX SUNS'),
-    ('SACRAMENTO KINGS'),
-    ('DALLAS MAVERICKS'),
-    ('HOUSTON ROCKETS'),
-    ('MEMPHIS GRIZZLIES'),
-    ('NEW ORLEANS PELICANS'),
-    ('SAN ANTONIO SPURS'),
-    ;
-
-
-INSERT INTO  player(fName, lName)
-VALUES
-    ('STEVEN', 'ADAMS'), /** 13 */
-    ('JAYSON', 'TATUM'),
-    ('ANTHONY', 'EDWARDS'),
-    ('JA', 'MORANT'),
-    ('JAMES', 'HARDEN'),
-    ('BRADLEY', 'BEAL'),
-    ('MYLES', 'TURNER'),
-    ('KYLE', 'KUZMA'),
-    ('JRUE', 'HOLIDAY'),
-    ('PASCAL', 'SIAKAM'),
-    ('BRONNY', 'JAMES'),
-    ('AUSTIN', 'REAVES'),
-    ('JORDAN', 'POOLE'),
-    ('LUKE', 'KORNET'),
-    ('MARCUS', 'SMART'),
-    ('CAM', 'THOMAS'),
-    ('SCOTTIE', 'BARNES'),
-    ('JALEN', 'GREEN'),
-    ('VICTOR', 'WEMBANYAMA'),
-    ('NICOLAS', 'BATUM'),
-    ('ALEX', 'SARR'),
-    ('OBI', 'TOPPIN')
-    ;
-
-INSERT INTO franchise(title, player_id, team_id, divison_id, yr_founded)
-VALUES
-    ('BIG KIWI', 13, 26, 6, 1967),
-    ('THE ANOMALY', 14, 1, 1, 1947),
-    ('ANT-MAN', 15, 16, 4, 1989),
-    ('POINT GOD', 16, 27, 6, 1995),
-    ('THE BEARD', 17, 21, 5, 1970),
-    ('REAL DEAL', 18, 23, 5, 1968),
-    ('SAMURAI MYLES', 19, 9, 2, 1967),
-    ('KUZ', 20, 9, 2, 1968),
-    ('JHOLLA', 21, 18, 4, 1970),
-    ('SPICY P', 22, 8, 2, 1967),
-    ('NULL', 23, 22, 5, 1947),
-    ('HILLBILLY KOBE', 24, 22, 5, 1947),
-    ('THE MICROWAVE', 25, 28, 6, 2002),
-    ('NULL', 28, 29, 6, 1967),
-    ('THE COBRA', 29, 27, 6, 1995),
-    ('NULL', 30, 2, 1, 1967),
-    ('NULL', 31, 5, 1, 1995),
-    ('THE UNICORN', 32, 26, 6, 1967),
-    ('THE ALIEN', 33, 29, 6, 1967),
-    ('BAT-MAN', 34, 21, 5, 1947),
-    ('THE BIG EIFFEL', 35, 13, 3, 1961),
-    ('OBI', 36, 8, 2, 1967)
-    ;
-
-
     SET FOREIGN_KEY_CHECKS = 0;
 
 
@@ -245,14 +158,63 @@ VALUES
 ('TYRESE', 'HALIBURTON', 185, '6.5', 'POINT GUARD', '2000-02-29',
 5),
 ('GIANNIS', 'ANTETOKOUNMPO', 242, '6.11', 'POWER FORWARD', '1994-12-06', 12),
-()
+('TRAE', 'YOUNG', 164, '6.1', 'POINT GUARD', '1998-09-19',
+7),
+('LAMELO', 'BALL', 180, '6.7', 'POINT GUARD', '2001-08-22',
+5),
+('DESMOND', 'BANE', 215, '6.5', 'SHOOTING GUARD', '1998-06-25',
+5),
+('ALEX', 'SARR', 205, '7.0', 'CENTER', '2005-04-26', 1),
+('ANDREW', 'WIGGINS', 197, '6.7', 'POWER FOWARD', '1995-02-23',
+11),
+('NIKOLA', 'JOKIC', 284, '6.11', 'CENTER', '1995-02-19',
+10),
+('JALEN', 'WILLAMS', 220, '6.6', 'POWER FORWARD', '2001-04-14', 3),
+('KEVIN', 'LOVE', 251, '6.8', 'POWER FORWARD', '1988-09-07', 17),
+('DEMAR', 'DEROZAN', 220, '6.6', 'SMALL FORWARD', '1989-08-07', 16),
+('COOPER', 'FLAGG', 205, '6.9', 'SMALL FORWARD', '2006-12-21', 
+NULL),
+('JA', 'MORANT', 174, '6.2', 'POINT GUARD', '1999-07-10', 6),
+('ZION', 'WILLAMSON', 284, '6.6', 'POWER FORWARD', '2000-06-06', 5),
+('VICTOR', 'WEMBANYAMA', 235,  '7.3', 'CENTER', '2004-01-04', 2)
+;
 
 
 INSERT INTO franchise(team, player_id, divison_id, yr_founded)
 VALUES
-    ('BROOKYLN NETS', NULL, 1, 1967),
-    ()
-
+    ('BOSTON CELTICS', 10, 1, 1947),
+    ('BROOKYLN NETS', 12, 1, 1967),
+    ('NEW YORK KNICKS', 13, 1, 1946),
+    ('PHILADELPHIA 76ERS', 14, 1, 1946),
+    ('TORONTO RAPTORS', 15, 1, 1995),
+    ('CHICAGO BULLS', 16, 2, 1966),
+    ('CLEVELAND CAVALIERS', 17, 2, 1970),
+    ('DETRTOIT PISTONS', 18, 2, 1937),
+    ('INDIANA PACERS', 19, 2, 1967),
+    ('MILWAUKEE BUCKS', 20, 2, 1968),
+    ('ATLANTA HAWKS', 21, 3, 1946),
+    ('CHARLOTTE HORNETS', 22, 3, 1988), 
+    ('ORLANDO MAGIC', 23, 3, 1989),
+    ('WASHINGTON WIZARDS', 24, 3, 1961),
+    ('MIAMI HEAT', 25, 3, 1988),
+    ('DENVER NUGGETS', 26, 4, 1967),
+    ('MINNESOTA TIMBERWOLVES', 9, 4, 1989),
+    ('OKLAHOMA CITY THUNDER', 27, 4, 2008),
+    ('PORTLAND TRAILBLAZERS', 8, 4, 1970),
+    ('UTAH JAZZ', 28, 4, 1975),
+    ('GOLDEN STATE WARRIORS', 2, 5, 1946),
+    ('GOLDEN STATE WARRIORS', 11, 5, 1946),
+    ('LOS ANGLES CLIPPERS', 5, 5, 1970),
+    ('LOS ANGLES LAKERS', 1, 5, 1946),
+    ('PHOENIX SUNS', 6, 5, 1968),
+    ('SACRAMENTO KINGS', 29, 5, 1923),
+    ('DALLAS MAVERICKS', 30, 6, 1980),
+    ('HOUSTON ROCKETS', 4, 6, 1967),
+    ('MEMPHIS GRIZZLIES', 31, 6, 1995),
+    ('NEW ORLEANS PELICANS', 32, 6, 2002),
+    ('SAN ANTONIO SPURS', 33, 6, 1967),
+    ('SAN ANTONIO SPURS', 7, 6, 1967)
+    ;
 
 
 
