@@ -12,7 +12,8 @@ INSERT INTO player(
     height_cm,
     position,
     dt_birth,
-    experience
+    experience,
+    image
 )
 VALUES (
     'LEBRON',
@@ -21,7 +22,8 @@ VALUES (
     '6.9',
     'POWER FORWARD',
     '1984-12-30',
-    20
+    20,
+    'lebron_james.jpg'
 );
 
 INSERT INTO player(
@@ -31,7 +33,8 @@ INSERT INTO player(
     height_cm,
     position,
     dt_birth,
-    experience
+    experience,
+    image
 )
 VALUES (
     'STEPH',
@@ -40,7 +43,8 @@ VALUES (
     '6.2',
     'POINT GUARD',
     '1988-03-14',
-    16
+    16,
+    'steph_curry.jpg'
 ),
 (
     'JAYSON',
@@ -49,7 +53,8 @@ VALUES (
     '6.8',
     'POWER FORWARD',
     '1998-03-03',
-    8
+    8,
+    'jayson_tatum.jpg'
 ),
 (
     'KEVIN',
@@ -58,7 +63,8 @@ VALUES (
     '6.11',
     'POWER FORWARD',
     '1988-09-29',
-    17
+    17,
+    'kevin_durant.jpg'
 ),
 (
     'KAWHI',
@@ -67,7 +73,8 @@ VALUES (
     '6.7',
     'SMALL FORWARD',
     '1991-06-29',
-    13
+    13,
+    'kawhi_leonard.jpg'
 ),
 (
     'DEVIN',
@@ -76,7 +83,8 @@ VALUES (
     '6.6',
     'SHOOTING GUARD',
     '1996-10-30',
-    10
+    10,
+    'devin_booker.jpg'
 ),
 (
     'CHRIS',
@@ -85,7 +93,8 @@ VALUES (
     '6.0',
     'POINT GUARD',
     '1985-06-06',
-    20
+    20,
+    'chris_paul.jpg'
 ),
 (
     'JRUE',
@@ -94,7 +103,8 @@ VALUES (
     '6.4',
     'SHOOTING GUARD',
     '1990-06-12',
-    16
+    16,
+    'jrue_holiday.jpg'
 ),
 (
     'ANTHONY',
@@ -103,7 +113,8 @@ VALUES (
     '6.4',
     'SHOOTING GUARD',
     '2001-07-05',
-    5
+    5,
+    'anthony_edwards.jpg'
 ),
 (
     'JAYLEN',
@@ -112,7 +123,8 @@ VALUES (
     '6.6',
     'SMALL FORWARD',
     '1996-10-24',
-    9
+    9,
+    'jaylen_brown.jpg'
 ),
 (
     'DRAYMOND',
@@ -121,101 +133,97 @@ VALUES (
     '6.6',
     'POWER FORWARD',
     '1990-03-04',
-    13
-)
-;
+    13,
+    'draymond_green.jpg'
+);
 
 
-INSERT INTO divison(divison)
+INSERT INTO franchise(team, conference, yr_founded, image, championships)
 VALUES
-    ('ATLANTIC DIVISON'),
-    ('CENTRAL DIVISON'),
-    ('SOUTHEAST DIVISON'),
-    ('NORTHWEST DIVISON'),
-    ('PACIFIC DIVISON'),
-    ('SOUTHEAST DIVISON')
-    ;
+('BOSTON CELTICS', 'EAST', '1947', 'boston_celtics.jpg', 18);
 
-INSERT INTO franchise(team, player_id, divison_id, yr_founded)
+INSERT INTO franchise(team, conference, yr_founded, image, championships)
 VALUES
-    ('BOSTON CELTICS', 3, 1, 1947);
+('BROOKLYN NETS', 'EAST', '1967', 'brooklyn_nets.jpg', 2),
+('NEW YORK KNICKS', 'EAST', '1947', 'new_york_knicks.jpg', 2),
+('PHILADELPHIA 76ERS', 'EAST', '1949','philadelphia_76ers.jpg', 3),
+('TORONTO RAPTORS', 'EAST', '1996', 'toronto_raptors.jpg', 1),
+('CHICAGO BULLS', 'EAST', '1966', 'chicago_bulls.jpg', 6),
+('CLEVELAND CAVALIERS', 'EAST', '1971', 'cleveland_cavaliers.jpg', 1),
+('DETROIT PISTONS', 'EAST', '1949', 'detroit_pistions.jpg', 3),
+('INDIANA PACERS', 'EAST', '1968', 'indiana_pacers.jpg', 0),
+('MILWAUKEE BUCKS', 'EAST', '1969', 'milwaukee_bucks.jpg', 2),
+('ATLANTA HAWKS', 'EAST', '1950', 'atlanta_hawks.jpg', 1),
+('CHARLOTTE HORNETS', 'EAST', '1989', 'charlotte_hornets.jpg', 0),
+('ORLANDO MAGIC', 'EAST', '1990', 'orlando_magic.jpg', 0),
+('WASHINGTON WIZARDS', 'EAST', '1962', 'washigton_wizards.jpg', 1),
+('MIAMI HEAT', 'EAST', '1989', 'miami_heat.jpg', 3),
+('DENVER NUGGETS', 'WEST', '1968', 'denver_nuggets.jpg', 1),
+('MINNESOTA TIMBERWOLVES', 'WEST', '1990', 'minnesota_timberwolves.jpg', 0),
+('PORTLAND TRAIL BLAZERS', 'WEST', '1971', 'portland_trailblazers.jpg', 1),
+('UTAH JAZZ', 'WEST', '1975', 'utah_jazz.jpg', 0),
+('GOLDEN STATE WARRIORS', 'WEST', '1947', 'goldenstate_warriors.jpg', 7),
+('LOS ANGELES CLIPPERS', 'WEST', '1971', 'losangles_clippers.jpg', 0),
+('LOS ANGLES LAKERS', 'WEST', '1949', 'losangles_lakers.jpg', 17),
+('PHOENIX SUNS', 'WEST', '1969', 'phoenix_suns.jpg', 0),
+('SACRAMENTO KINGS', 'WEST', '1949', 'sacramento_kings.jpg', 1),
+('DALLAS MAVERICKS', 'WEST', '1949', 'dallas_mavericks.jpg', 1), 
+('HOUSTON ROCKECTS', 'WEST', '1968', 'houston_rockects.jpg', 2),
+('MEMPHIS GRIZZLIES', 'WEST', '1996', 'memphis_grizzlies.jpg', 0),
+('NEW ORLEANS PELICANS', 'WEST', '2002', 'new_orleans_pelicans.jps', 0),
+('SAN ANTONIO SPURS ', 'WEST', '1968', 'san_antonio_spurs.jpg', 5);
 
 
-INSERT INTO player( fName, lName, weight_sc, height_cm, position, dt_birth, experience)
+INSERT INTO franchise(team, conference, yr_founded, image, championships)
+VALUES
+('OKLAHOMA CITY THUNDER', 'WEST', '1968', 'okc.jpg', 2);
+
+
+INSERT INTO player( fName, lName, weight_sc, height_cm, position, dt_birth, experience, image)
 VALUES 
-('CAM', 'THOMAS', 210, '6.4', 'SHOOTING GUARD', '2001-10-13', 4),
+('CAM', 'THOMAS', 210, '6.4', 'SHOOTING GUARD', '2001-10-13', 4, 'cam_thomas.jpg'),
 ('JALEN', 'BRUNSON', 190, '6.2', 'POINT GUARD', '1996-07-31',
-7),
+7, 'jalen_brunson.jpg'),
 ('JOEL', 'EMBIID', 280, '7.0', 'CENTER', '1994-03-16',
-9),
+9, 'joel_embiid.jpg'),
 ('SCOTTIE', 'BARNES', 227, '6.7', 'SMALL FORWARD', '2001-07-01',
-4),
+4, 'scottie_barnes.jpg'),
 ('COBY', 'WHITE', 195, '6.5', 'POINT GUARD', '2000-02-16',
-6),
-('DONOVAN', 'MITCHELL JR', 215, '6.3', 'SHOOTING GUARD', '1996-09-07', 8),
+6, 'coby_white.jpg'),
+('DONOVAN', 'MITCHELL JR', 215, '6.3', 'SHOOTING GUARD', '1996-09-07', 8, 'donovan_mitchell.jpg'),
 ('AUSAR', 'THOMPSON', 215, '6.7', 'SMALL FORWARD', '2003-01-30',
-2),
+2, 'ausar_thompson.jpg'),
 ('TYRESE', 'HALIBURTON', 185, '6.5', 'POINT GUARD', '2000-02-29',
-5),
-('GIANNIS', 'ANTETOKOUNMPO', 242, '6.11', 'POWER FORWARD', '1994-12-06', 12),
+5, 'tyrese_haliburton.jpg'),
+('GIANNIS', 'ANTETOKOUNMPO', 242, '6.11', 'POWER FORWARD', '1994-12-06', 12, 'giannis_antetokounmpo.jpg'),
 ('TRAE', 'YOUNG', 164, '6.1', 'POINT GUARD', '1998-09-19',
-7),
+7, 'trae_young.jpg'),
 ('LAMELO', 'BALL', 180, '6.7', 'POINT GUARD', '2001-08-22',
-5),
+5, 'lamello_ball.jpg'),
 ('DESMOND', 'BANE', 215, '6.5', 'SHOOTING GUARD', '1998-06-25',
-5),
-('ALEX', 'SARR', 205, '7.0', 'CENTER', '2005-04-26', 1),
+5, 'desmond_bane.jpg'),
+('ALEX', 'SARR', 205, '7.0', 'CENTER', '2005-04-26', 1, 'alex_sarr.jpg'),
 ('ANDREW', 'WIGGINS', 197, '6.7', 'POWER FOWARD', '1995-02-23',
-11),
+11, 'andrew_wiggins.jpg'),
 ('NIKOLA', 'JOKIC', 284, '6.11', 'CENTER', '1995-02-19',
-10),
-('JALEN', 'WILLAMS', 220, '6.6', 'POWER FORWARD', '2001-04-14', 3),
-('KEVIN', 'LOVE', 251, '6.8', 'POWER FORWARD', '1988-09-07', 17),
-('DEMAR', 'DEROZAN', 220, '6.6', 'SMALL FORWARD', '1989-08-07', 16),
+10, 'nikola_jokic.jpg'),
+('JALEN', 'WILLAMS', 220, '6.6', 'POWER FORWARD', '2001-04-14', 3, 'jalen_willams.jpg'),
+('KEVIN', 'LOVE', 251, '6.8', 'POWER FORWARD', '1988-09-07', 17, 'kevin_love.jpg'),
+('DEMAR', 'DEROZAN', 220, '6.6', 'SMALL FORWARD', '1989-08-07', 16, 'demar_derozan.jpg'),
 ('COOPER', 'FLAGG', 205, '6.9', 'SMALL FORWARD', '2006-12-21', 
-NULL),
-('JA', 'MORANT', 174, '6.2', 'POINT GUARD', '1999-07-10', 6),
-('ZION', 'WILLAMSON', 284, '6.6', 'POWER FORWARD', '2000-06-06', 5),
-('VICTOR', 'WEMBANYAMA', 235,  '7.3', 'CENTER', '2004-01-04', 2)
-;
+NULL, 'cooper_flagg.jpg'),
+('JA', 'MORANT', 174, '6.2', 'POINT GUARD', '1999-07-10', 6, 'ja_morant.jpg'),
+('ZION', 'WILLAMSON', 284, '6.6', 'POWER FORWARD', '2000-06-06', 5, 'zion_willamson.jpg'),
+('VICTOR', 'WEMBANYAMA', 235,  '7.3', 'CENTER', '2004-01-04', 2, 'victor_wembanyama.jpg');
 
 
-INSERT INTO franchise(team, player_id, divison_id, yr_founded)
-VALUES
-    ('BOSTON CELTICS', 10, 1, 1947),
-    ('BROOKYLN NETS', 12, 1, 1967),
-    ('NEW YORK KNICKS', 13, 1, 1946),
-    ('PHILADELPHIA 76ERS', 14, 1, 1946),
-    ('TORONTO RAPTORS', 15, 1, 1995),
-    ('CHICAGO BULLS', 16, 2, 1966),
-    ('CLEVELAND CAVALIERS', 17, 2, 1970),
-    ('DETRTOIT PISTONS', 18, 2, 1937),
-    ('INDIANA PACERS', 19, 2, 1967),
-    ('MILWAUKEE BUCKS', 20, 2, 1968),
-    ('ATLANTA HAWKS', 21, 3, 1946),
-    ('CHARLOTTE HORNETS', 22, 3, 1988), 
-    ('ORLANDO MAGIC', 23, 3, 1989),
-    ('WASHINGTON WIZARDS', 24, 3, 1961),
-    ('MIAMI HEAT', 25, 3, 1988),
-    ('DENVER NUGGETS', 26, 4, 1967),
-    ('MINNESOTA TIMBERWOLVES', 9, 4, 1989),
-    ('OKLAHOMA CITY THUNDER', 27, 4, 2008),
-    ('PORTLAND TRAILBLAZERS', 8, 4, 1970),
-    ('UTAH JAZZ', 28, 4, 1975),
-    ('GOLDEN STATE WARRIORS', 2, 5, 1946),
-    ('GOLDEN STATE WARRIORS', 11, 5, 1946),
-    ('LOS ANGLES CLIPPERS', 5, 5, 1970),
-    ('LOS ANGLES LAKERS', 1, 5, 1946),
-    ('PHOENIX SUNS', 6, 5, 1968),
-    ('SACRAMENTO KINGS', 29, 5, 1923),
-    ('DALLAS MAVERICKS', 30, 6, 1980),
-    ('HOUSTON ROCKETS', 4, 6, 1967),
-    ('MEMPHIS GRIZZLIES', 31, 6, 1995),
-    ('NEW ORLEANS PELICANS', 32, 6, 2002),
-    ('SAN ANTONIO SPURS', 33, 6, 1967),
-    ('SAN ANTONIO SPURS', 7, 6, 1967)
-    ;
+-- player_to_franchise 
+INSERT INTO player_to_franchise (player_id, franchise_id) VALUES (3, 1); 
 
+
+INSERT INTO player_to_franchise (player_id, franchise_id) VALUES
+()
+--
 
 
 
