@@ -9,10 +9,18 @@ router.get('/api', (req, res)=> {
     res.json({
         'Players': `http://localhost:${PORT}/api/player`,
         'All Franchise': `http://localhost:${PORT}/api/franchise`,
-        'All Players to Franchise': `http://localhost:${PORT}/api/player_to_franchise`,
     })
 })
 
+
+const endpoints = [
+    'player',
+    'franchise',
+]
+
+endpoints.forEach(endpoint => {
+    router.use(`/api/${endpoint}`, require(`./api/${endpoint}Routes`))
+})
 
 
 
